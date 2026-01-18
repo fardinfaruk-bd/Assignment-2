@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+}
+/* Inter Font Embed */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* Shared Styles */
+.btn{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 16px;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    color: white;
+    border: none;
+    border-radius: 10000px;
+}
+
+
+
+
+
+/* Navbar Related Style */
+body{
+    background-color: #1A0B2E;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 16px;
+}
+nav .menu{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+nav .menu li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.784);
+    font-size: 1rem;
+    font-weight: 500;
+}
+#logo h1{
+    color: white;
+    font-size: 1.75rem;
+}
+#logo span{
+      background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* Responsive Style */
+
+/* Small devices */
+@media screen and (max-width: 576px){
+    nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav .menu{
+        display: none;
+    }
+    nav div button{
+        display: none;
+    }
+}
+
+
+
+
+/* Medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    nav .nav-icon img{
+        display: none;
+        
+    }
+}
+
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+    nav .nav-icon {
+        display: none;
+    }
+}
