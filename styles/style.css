@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  background-color: #1A0B2E;
+  color: white;
 }
 
 /* Font */
@@ -80,14 +80,12 @@ hr {
 
 /* Hero Section */
 #hero {
-  #hero {
   background-image: url("../assets/hero-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-}
 
 .hero-container {
   width: 75%;
@@ -101,7 +99,6 @@ hr {
   color: white;
 }
 
-/* Image Stack */
 .image-box {
   position: relative;
   width: 80%;
@@ -122,9 +119,7 @@ hr {
   width: 30%;
   max-width: 100px;
 }
-
-/* Hero Text */
-.hero-text h1 {
+.hero-text h1{
   font-size: 3.75rem;
   font-weight: 800;
   margin-bottom: 8px;
@@ -137,13 +132,62 @@ hr {
   color: rgba(255, 255, 255, 0.637);
 }
 
-/* Buttons group */
 .hero-btns {
   display: flex;
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
+/* About Section Style */
+#about{
+  width: 100%;
+}
+
+#about .about-container {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.about-content{
+  margin: 0 auto;
+  width: 100%;
+}
+.about-content h2{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.about-content p{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.80);
+}
+.about-container hr{
+  margin: 80px 0;
+}
+.about-info{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  justify-content:space-around;
+  padding-bottom: 120px;
+}
+.info-card h1{
+  color: #00ff88;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.info-card p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:rgba(255, 255, 255, 0.80);
+}
+
+
+
 
 /* Responsive */
 
@@ -162,7 +206,13 @@ hr {
     width: 90%;
     padding: 60px 0;
   }
+  .about-info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
+
+
 
 /* Tablet */
 @media (min-width: 577px) and (max-width: 992px) {
@@ -172,6 +222,9 @@ hr {
 
   .nav-icon {
     display: none;
+  }
+  .about-info{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
