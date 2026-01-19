@@ -14,7 +14,7 @@ body {
 .inter-font {
   font-family: "Inter", sans-serif;
 }
-
+/* shared style */
 /* Buttons */
 .btn {
   font-size: 1rem;
@@ -37,12 +37,32 @@ body {
   border-radius: 9999px;
   cursor: pointer;
 }
-
-/* Header */
+.btn:hover{
+  background: linear-gradient(135deg, #f7e93f, #fb09b4, #9100f8);
+  transform: scale(1.1);
+}
+.btn-2:hover{
+  background:  linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  border: none;
+  transform: scale(1.1);
+  color: white;
+}
 .bg {
   background-color: #1A0B2E;
 }
+.bg-2{
+  background-color: #230E3D;
+}
 
+
+/* Header */
+
+.menu a:hover{
+  background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
 nav {
   display: flex;
   align-items: center;
@@ -63,12 +83,12 @@ nav {
   text-decoration: none;
 }
 
-#logo h1 {
+.logo h1 {
   color: white;
   font-size: 1.75rem;
 }
 
-#logo span {
+.logo span {
   background: linear-gradient(to top, #f7e93f, #fb09b4, #9100f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,10 +99,12 @@ hr {
 }
 
 /* Hero Section */
+
 #hero {
-  background-image: url("../assets/hero-bg.png");
-  background-position: center;
+  width: 100%;
+  background-image: url(../assets/hero-bg.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -119,6 +141,30 @@ hr {
   width: 30%;
   max-width: 100px;
 }
+@keyframes ping-pong{
+            from{
+                scale: .9;
+            }
+            to{
+              scale: 1;
+            }
+        }
+.new{
+  background-color: #00ff88;
+  width: 70px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1A0B2E;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  right:-3px;
+  box-shadow: 0px 0px 10px #00ff88;
+  animation: ping-pong 1s ease-in-out 1s infinite alternate;
+}
+
+
 .hero-text h1{
   font-size: 3.75rem;
   font-weight: 800;
@@ -238,6 +284,155 @@ hr {
   line-height: 24px;
 }
 
+/* Featured Episodes Section Style */
+.featured-card-info:hover{
+  transform: scale(1.2);
+}
+.featured-container{
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.featured-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.featured-card-info a{
+  text-decoration: none;
+  color: white;
+}
+
+.featured-card-info{
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  align-content: center;
+  overflow: hidden;
+}
+.card-text-content{
+  padding: 24px;
+}
+.featured-container h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.card-text-content h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.card-text-content p{
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.card-text-content .time{
+  display: flex;
+  gap: 15px;
+}
+.card-text-content .time p{
+  color: #00ff88;
+}
+
+
+
+
+/* meet the host section style */
+.meet-host-container{
+  padding-bottom: 120px;
+}
+.meet-host-container h2{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.host-card{
+  width: 75%;
+  max-width: 1600px;
+  background-color: #35116570;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.host-info h3{
+  font-size: 2rem;
+  font-weight: bold;
+
+  margin-bottom: 16px;
+}
+.host-info p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.60);
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.host-icons{
+  display: flex;
+  gap: 24px;
+}
+.host-card .circle{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #533C72;
+    display: inline-block;
+    border-radius: 50px;
+}
+.circle img{
+    padding: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.host-icons .circle:hover{
+    background-color: rgba(109, 10, 190, 0.395);
+  }
+
+
+/* footer section related style */
+.footer{
+  background-image: url(../assets/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+}
+.footer-container{
+  text-align: center;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.icon-info{
+  display: flex;
+  gap: 8px;
+}
+.footer-container .logo h1{
+  font-size: 3.75rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.icon-info p, .copyright{
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
 
 
 
@@ -252,8 +447,8 @@ hr {
 /* Responsive */
 
 /* Mobile */
-@media (max-width: 576px) {
-  nav {
+@media screen and (max-width: 576px){
+  nav{
     width: 90%;
   }
 
@@ -261,7 +456,14 @@ hr {
   nav button {
     display: none;
   }
-
+  #hero {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  
   .hero-container {
     width: 90%;
     padding: 60px 0;
@@ -277,12 +479,23 @@ hr {
     grid-column: span 1;
     grid-row: span 1;
   }
+  .featured-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .host-card{
+    display: block;
+    text-align: center;
+  }
+  .host-icons{
+    justify-content: center;
+  }
+
 }
 
 
 
 /* Tablet */
-@media (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .hero-container {
     width: 85%;
   }
@@ -300,11 +513,21 @@ hr {
     grid-column: span 2;
     grid-row: span 2;
   }
+  .featured-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .host-card{
+    display: block;
+    text-align: center;
+  }
+  .host-icons{
+    justify-content: center;
+  }
 
 }
 
 /* Desktop */
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
   .nav-icon {
     display: none;
   }
