@@ -141,9 +141,9 @@ hr {
   width: 30%;
   max-width: 100px;
 }
-@keyframes ping-pong{
+@keyframes animate{
             from{
-                scale: .9;
+                scale: 0.9;
             }
             to{
               scale: 1;
@@ -161,7 +161,7 @@ hr {
   top: 20px;
   right:-3px;
   box-shadow: 0px 0px 10px #00ff88;
-  animation: ping-pong 1s ease-in-out 1s infinite alternate;
+  animation: animate 1s ease-in-out 1s infinite alternate;
 }
 
 
@@ -235,7 +235,6 @@ hr {
 
 /* Benefit Grid section Style */
 .benefit-container{
-  max-width: 1200px;
   width: 75%;
   margin: 0 auto;
   padding: 120px 0;
@@ -466,15 +465,28 @@ hr {
   #hero {
     background-position: center;
     background-size: 900px 700px;
-    
   }
   
   .hero-container {
     width: 90%;
     padding: 60px 0;
   }
+  #about .about-container {
+    width: 90%;
+  }
+  .about-content h2{
+    font-size: 2.5rem;
+  }
   .about-info{
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 auto;
+  }
+  .benefit-container h2{
+    font-size: 2.5rem;
+  }
+  .benefit-container {
+    width: 90%;
   }
   
   .benefit-container .card{
@@ -484,19 +496,23 @@ hr {
     grid-column: span 1;
     grid-row: span 1;
   }
+  .featured-container{
+    width: 90%;
+  }
   .featured-card{
     grid-template-columns: repeat(1, 1fr);
   }
   .host-card{
     display: block;
     text-align: center;
+    width: 90%;
   }
   .host-icons{
     justify-content: center;
   }
 
   .footer{
-    background-size: 170% 100%;
+    background-size: 150% 100%;
     padding: 40px 20px;
   }
   
@@ -513,6 +529,9 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
+  }
+  .info-card h1{
+    font-size: 2rem;
   }
 }
 
