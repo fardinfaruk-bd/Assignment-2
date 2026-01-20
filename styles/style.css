@@ -423,7 +423,7 @@ hr {
   justify-items: center;
   align-items: center;
 }
-.icon-info{
+.icon-info a{
   display: flex;
   gap: 8px;
 }
@@ -437,6 +437,10 @@ hr {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 32px;
+}
+.icon-info a ,p{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
